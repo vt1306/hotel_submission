@@ -21,8 +21,8 @@ public class JSONFileParser {
 		ObjectMapper objectMapperCM = new ObjectMapper();
 		
 		RootObject cm = objectMapperCM.readValue(jsonDataCM, RootObject.class);
-		Double totalCollection = null;
-		Double orderCollection = null;
+		Double totalCollection = 0.0;
+		Double orderCollection = 0.0;
 		String locationId, location;
 		
 		totalCollection = Double
